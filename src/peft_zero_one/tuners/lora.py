@@ -86,7 +86,7 @@ class LoraModel(torch.nn.Module):
 
     Example::
 
-        >>> from transformers import AutoModelForSeq2SeqLM, LoraConfig >>> from peft import LoraModel, LoraConfig >>>
+        >>> from transformers import AutoModelForSeq2SeqLM, LoraConfig >>> from peft_zero_one import LoraModel, LoraConfig >>>
         config = LoraConfig(
             peft_type="LORA", task_type="SEQ_2_SEQ_LM", r=8, lora_alpha=32, target_modules=["q", "v"],
             lora_dropout=0.01, )
@@ -188,6 +188,7 @@ class LoraModel(torch.nn.Module):
 
 # Below code is based on https://github.com/microsoft/LoRA/blob/main/loralib/layers.py
 # and modified to work with PyTorch FSDP
+
 
 #  ------------------------------------------------------------------------------------------
 #  Copyright (c) Microsoft Corporation. All rights reserved.

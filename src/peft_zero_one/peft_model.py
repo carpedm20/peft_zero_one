@@ -303,7 +303,7 @@ class PeftModelForSequenceClassification(PeftModel):
 
     Example::
 
-        >>> from transformers import AutoModelForSequenceClassification >>> from peft import
+        >>> from transformers import AutoModelForSequenceClassification >>> from peft_zero_one import
         PeftModelForSequenceClassification, get_peft_config >>> config = {
                 'peft_type': 'PREFIX_TUNING', 'task_type': 'SEQ_CLS', 'inference_mode': False, 'num_virtual_tokens':
                 20, 'token_dim': 768, 'num_transformer_submodules': 1, 'num_attention_heads': 12, 'num_layers': 12,
@@ -470,7 +470,7 @@ class PeftModelForCausalLM(PeftModel):
 
     Example::
 
-        >>> from transformers import AutoModelForCausalLM >>> from peft import PeftModelForCausalLM, get_peft_config
+        >>> from transformers import AutoModelForCausalLM >>> from peft_zero_one import PeftModelForCausalLM, get_peft_config
         >>> config = {
                 'peft_type': 'PREFIX_TUNING', 'task_type': 'CAUSAL_LM', 'inference_mode': False, 'num_virtual_tokens':
                 20, 'token_dim': 1280, 'num_transformer_submodules': 1, 'num_attention_heads': 20, 'num_layers': 36,
@@ -597,7 +597,7 @@ class PeftModelForSeq2SeqLM(PeftModel):
 
     Example::
 
-        >>> from transformers import AutoModelForSeq2SeqLM >>> from peft import PeftModelForSeq2SeqLM, get_peft_config
+        >>> from transformers import AutoModelForSeq2SeqLM >>> from peft_zero_one import PeftModelForSeq2SeqLM, get_peft_config
         >>> config = {
                 'peft_type': 'LORA', 'task_type': 'SEQ_2_SEQ_LM', 'inference_mode': False, 'r': 8, 'target_modules':
                 ['q', 'v'], 'lora_alpha': 32, 'lora_dropout': 0.1, 'merge_weights': False, 'fan_in_fan_out': False,
@@ -743,7 +743,7 @@ class PeftModelForTokenClassification(PeftModel):
 
     Example::
 
-        >>> from transformers import AutoModelForSequenceClassification >>> from peft import
+        >>> from transformers import AutoModelForSequenceClassification >>> from peft_zero_one import
         PeftModelForTokenClassification, get_peft_config >>> config = {
                 'peft_type': 'PREFIX_TUNING', 'task_type': 'TOKEN_CLS', 'inference_mode': False, 'num_virtual_tokens':
                 20, 'token_dim': 768, 'num_transformer_submodules': 1, 'num_attention_heads': 12, 'num_layers': 12,

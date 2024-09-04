@@ -21,7 +21,7 @@ extras["docs_specific"] = ["hf-doc-builder"]
 extras["dev"] = extras["quality"] + extras["docs_specific"]
 
 setup(
-    name="peft",
+    name="peft_zero_one",
     version="0.1.0",
     description="Parameter-Efficient Fine-Tuning (PEFT)",
     long_description=open("README.md", "r", encoding="utf-8").read(),

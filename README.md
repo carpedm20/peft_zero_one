@@ -34,7 +34,7 @@ Supported methods:
 
 ```python
 from transformers import AutoModelForSeq2SeqLM
-from peft import get_peft_config, get_peft_model, LoraConfig, TaskType
+from peft_zero_one import get_peft_config, get_peft_model, LoraConfig, TaskType
 model_name_or_path = "bigscience/mt0-large"
 tokenizer_name_or_path = "bigscience/mt0-large"
 
@@ -285,7 +285,7 @@ The same principle applies to our [segmentation models](https://huggingface.co/m
 any GPU memory savings. Please refer issue [[FSDP] FSDP with CPU offload consumes 1.65X more GPU memory when training models with most of the params frozen](https://github.com/pytorch/pytorch/issues/91165). 
 
   ```python
-  from peft.utils.other import fsdp_auto_wrap_policy
+  from peft_zero_one.utils.other import fsdp_auto_wrap_policy
 
   ...
 

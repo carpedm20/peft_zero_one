@@ -6,8 +6,8 @@ from torch.utils.data import DataLoader
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, default_data_collator, get_linear_schedule_with_warmup
 
 from datasets import load_dataset
-from peft import LoraConfig, TaskType, get_peft_model
-from peft.utils.other import fsdp_auto_wrap_policy
+from peft_zero_one import LoraConfig, TaskType, get_peft_model
+from peft_zero_one.utils.other import fsdp_auto_wrap_policy
 from tqdm import tqdm
 
 

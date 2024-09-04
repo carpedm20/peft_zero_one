@@ -17,7 +17,7 @@ from transformers import (
 
 import psutil
 from datasets import load_dataset
-from peft import LoraConfig, TaskType, get_peft_model
+from peft_zero_one import LoraConfig, TaskType, get_peft_model
 from tqdm import tqdm
 
 

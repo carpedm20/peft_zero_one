@@ -36,7 +36,7 @@ from diffusers.optimization import get_scheduler
 from diffusers.utils import check_min_version
 from diffusers.utils.import_utils import is_xformers_available
 from huggingface_hub import HfFolder, Repository, whoami
-from peft import LoraConfig, LoraModel, get_peft_model_state_dict
+from peft_zero_one import LoraConfig, LoraModel, get_peft_model_state_dict
 from PIL import Image
 from torchvision import transforms
 from tqdm.auto import tqdm

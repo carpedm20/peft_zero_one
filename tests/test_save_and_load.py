@@ -19,7 +19,7 @@ import unittest
 import torch
 from transformers import AutoModelForCausalLM
 
-from peft import (
+from peft_zero_one import (
     LoraConfig,
     PeftModel,
     PrefixTuningConfig,

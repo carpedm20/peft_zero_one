@@ -11,7 +11,7 @@ from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, get_linear_schedu
 
 import psutil
 from datasets import load_dataset
-from peft import LoraConfig, TaskType, get_peft_model
+from peft_zero_one import LoraConfig, TaskType, get_peft_model
 from tqdm import tqdm
 
 

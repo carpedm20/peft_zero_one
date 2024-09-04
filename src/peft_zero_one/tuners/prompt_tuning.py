@@ -75,7 +75,7 @@ class PromptEmbedding(torch.nn.Module):
 
     Example::
 
-        >>> from peft import PromptEmbedding, PromptTuningConfig >>> config = PromptTuningConfig(
+        >>> from peft_zero_one import PromptEmbedding, PromptTuningConfig >>> config = PromptTuningConfig(
                 peft_type="PROMPT_TUNING", task_type="SEQ_2_SEQ_LM", num_virtual_tokens=20, token_dim=768,
                 num_transformer_submodules=1, num_attention_heads=12, num_layers=12, prompt_tuning_init="TEXT",
                 prompt_tuning_init_text="Predict if sentiment of this review is positive, negative or neutral",
